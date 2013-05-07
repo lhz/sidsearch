@@ -1,0 +1,12 @@
+<form class="form-horizontal">
+  <input type="text" ng-model="searchTerm"/>
+  <button class="btn" ng-click="doSearch()">
+    <i class="icon-search"></i> Search
+  </button>
+</form>
+
+<table class="table table-striped">
+  <tr ng-repeat="tune in result.results">
+    <td>{{tune.name}}</td><td>{{tune.author}}</td>
+  </tr>
+</table>
